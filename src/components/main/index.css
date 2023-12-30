@@ -1,20 +1,106 @@
 .container {
-    height: 100vmin;
+    height: 100vh;
     align-items: center;
     justify-items: center;
-    background-color: #231918;
+    vertical-align: middle;
+    background-color: #000000;
+}
+.start{
+    height: 100px;
+    width: 100px;
 }
 .maintext{
     display: flex;
     flex: 1;
     padding: 10px;
+    padding-top: -2%;
+    font-size: 2em;
+    flex-direction: row;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
 }
+.no-rotation {
+    transform: rotate(0deg) !important; /* !important ensures that this rule takes precedence */
+  }
 .special{
     color: #ffffff;
 }
-.App-logo{
-    height: 40px;
-    width: 40px;
-    padding-left: 5px;
-    padding-right: 5px;
+.secondtext{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: -12%;
+    font-size: 2em;
 }
+.thirdtext{
+    display: flex;
+    flex: 1;
+    color: #B8BCC1;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -3%;
+    justify-content: center;
+}
+.timer{
+    display: flex;
+    flex: 1;
+    color: #B8BCC1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.App-logo{
+    height: 60px;
+    width: 60px;
+    top: 10px;
+    padding-left: 10px;
+    color: #2980b9;
+    padding-right: 10px;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #B8BCC1;
+  }
+  
+  .flex-item {
+    /* align-items: center; */
+    /* justify-content: center; */
+    text-align: center;
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Adjust size according to content */
+  }
+  
+  .sub-item {
+    /* text-align: start; */
+    /* align-items: flex-start; */
+    /* justify-content: flex-start; */
+    /* border: 1px solid #ccc; */
+    padding: 5px;
+    margin: 0; /* Removed margin */
+  }
+  .claim-ticket-button {
+    background-color: #3498db; /* Button background color */
+    color: #ffffff; /* Button text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer;
+    display: flex;
+    /* flex: 1; */
+    /* color: #B8BCC1; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .claim-ticket-button:hover {
+    background-color: #2980b9; /* Button background color on hover */
+  }
